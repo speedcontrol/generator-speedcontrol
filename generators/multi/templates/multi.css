@@ -1,0 +1,252 @@
+@import url(http://db.onlinewebfonts.com/c/5d246fe92931a92e7355fe67b5ad609f?family=Tw+Cen+MT);
+body {
+  --light-color: white;
+  --dark-color: black;
+  font-family: "Tw Cen MT";
+  font-weight: bold;
+  overflow:hidden;
+  margin: 0px;
+  padding: 0px;
+/* The font size you want at 720p.  Other sizes are calculated from here */
+  font-size: 20px;
+}
+
+#window-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: {{width}}px;
+    height: {{height}}px;
+    overflow: hidden;
+    color: var(--light-color);
+    margin: 0px;
+    padding: 0px;
+}
+
+.positionable {
+  position: fixed;
+  width: 150px;
+}
+
+.timer_paused {
+  color: yellow;
+}
+
+.timer_running {
+  color: rgb(255,255,255,1);
+}
+
+.timer_stopped {
+  color: gray;
+}
+
+.timer_finished {
+    color: rgba(0,127,0,1);
+}
+
+.editableObject {
+    background: rgba(255,0,0,0.3);
+}
+
+.gameCapture {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /*background-color: #00DD00;*/
+    background-color: transparent;
+    line-height: 50px;
+    text-align: center;
+display: none;
+}
+
+#runInformationGameEstimate:before {
+  content: 'EST ';
+  padding-right: 10px;
+}
+
+#runInformationGameEstimate:after {
+  content: ':00';
+}
+
+.playerContainer {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 33%;
+    height: 7%;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.runnerLogo {
+  display: none;
+  position: fixed;
+  height: 0px;
+  width: 0px;
+}
+
+.runnerInfo {
+    line-height: 2em;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-color);
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#runInformationContainer {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 31%;
+    height: 7%;
+    display: flex;
+    overflow: hidden;
+}
+
+#runInformationFields {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    width: 100%;
+    padding-left: 15px;
+    flex: 1;
+    overflow: hidden;
+}
+
+#runInformationGameEstimate {
+    position: relative;
+    top: 10%;
+    font-size: 1em;
+    text-align: center;
+    color: var(--dark-color);
+}
+
+#runInformationGameName {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-color);
+}
+
+#runInformationGameCategory {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-color);
+}
+
+#runInformationGameSystem {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-color);
+}
+
+#runInformationLogo {
+    background-image: url('../../nodecg-speedcontrol/images/runInformationIcon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 12%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.twitchLogo {
+  width: 100%;
+  height: 100%;
+}
+
+#timerContainer {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 32%;
+    height: 14%;
+}
+
+#timer {
+    position: relative;
+    font-size: 2.3em;
+    text-align: center;
+    top: 5px;
+    color: var(--dark-color)
+}
+
+#marathonLogo {
+  display: none;
+}
+
+.runnerTimerFinishedContainer {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+    display: flex;
+    color: var(--light-color);
+    font-size: 1em;
+    height: 6%;
+    background-color: rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.runnerTimerFinished {
+    height: 76%;
+    line-height: 2.8em;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.finishedLogo {
+    position: relative;
+    width: 32px;
+    height: 76%;
+    padding: 5px;
+    background-image: url('../../nodecg-speedcontrol/images/finishFlag.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 76%;
+}
+
+#comingUp {
+  color: var(--dark-color);
+}
+
+#editModeButtons {
+    display: flex;
+    position: fixed;
+    top: 2px;
+    left: 1000px;
+    height: 25px;
+    width: 240px;
+}
+
+#positionDebug {
+    position: fixed;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    color: var(--light-color);
+    font-size: 1.3em;
+    opacity: 0;
+    z-index: 200;
+    width: 100%;
+    height: 30px;
+}
