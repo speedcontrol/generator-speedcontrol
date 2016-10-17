@@ -20,10 +20,19 @@
     "url": "https://github.com/speedcontrol/generator-speedcontrol/issues"
   },
   "dependencies": {
-    "yeoman-generator": "^0.23.0",
+    "mustache": "^2.2.1",
     "chalk": "^1.0.0",
-    "yosay": "^1.0.0",
-    "parse-author": "^1.0.0"
+    "deep-extend": "^0.4.1",
+    "generator-license": "^4.0.0",
+    "generator-node": "^1.10.2",
+    "git-config": "0.0.7",
+    "github-username": "^3.0.0",
+    "inquirer-npm-name": "^2.0.0",
+    "lodash": "^4.10.0",
+    "mkdirp": "^0.5.1",
+    "parse-author": "^1.0.0",
+    "yeoman-generator": "^0.24.1",
+    "yosay": "^1.0.2"
   },
   "devDependencies": {
     "yeoman-test": "^1.0.0",
@@ -39,11 +48,7 @@
     "gulp-plumber": "^1.0.0",
     "gulp-nsp": "^2.1.0",
     "lodash": "^4.10.0",
-    "generator-license": "^4.0.0",
-    "generator-node": "^1.10.2",
-    "git-config": "0.0.7",
-    "github-username": "^3.0.0",
-    "mustache": "^2.2.1"
+
   },
   "eslintConfig": {
     "extends": "xo-space",
