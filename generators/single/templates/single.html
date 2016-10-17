@@ -2,6 +2,7 @@
 <html lang="en" data-sceneid="{{sceneID}}">
 <head>
     <meta charset="UTF-8">
+    <link href="../nodecg-speedcontrol/css/common.css" rel="stylesheet"/>
     <link href="{{sceneID}}.css" rel="stylesheet"/>
     <script src="../nodecg-speedcontrol/components/gsap/src/minified/TweenMax.min.js"></script>
     <script src="../nodecg-speedcontrol/components/jquery/dist/jquery.min.js"></script>
@@ -13,7 +14,7 @@
 </head>
 <body>
     <div id="window-container">
-        <div id="positionDebug">
+        <div id="positionDebug" class="positionable">
             <div id="positionDebugText">
                 X: 100
                 Y: 100
@@ -23,21 +24,48 @@
                 <button id="resetCSSContentButton">Reset Layout</button>
             </div>
         </div>
-        <div id="gameCapture1" class="positionable gameCapture" aspect-ratio="4:3">
-        </div>
+
         <div id="marathonLogo" class="positionable resizable keepproportion"> </div>
-        <div id="player1Container" class="playerContainer positionable resizable keepproportion">
-            <div class="runnerLogo">
-                <img class="twitchLogo" src="../nodecg-speedcontrol/images/twitchlogo.png">
-            </div>
-            <div class="runnerInfo"> </div>
+
+        <div id="runner1TimerFinishedContainer" class="runnerTimerFinishedContainer positionable">
+            <div class="finishedLogo"></div>
+            <div class="dummyTextable runnerTimerFinished"></div>
         </div>
+        <div id="runner2TimerFinishedContainer" class="runnerTimerFinishedContainer positionable">
+            <div class="finishedLogo"></div>
+            <div class="dummyTextable runnerTimerFinished"></div>
+        </div>
+
+        <div id="team1" class="team positionable resizable">
+          <div id="teamName1" class="teamName name "></div>
+          <!--<ul class="teamList"></ul>-->
+          <div id="teamRotation1" class="playerContainer ">
+              <div class="runnerInfo"> </div>
+              <div class="runnerLogo">
+                  <img class="twitchLogo" src="../nodecg-speedcontrol/images/twitchlogo.png">
+              </div>
+
+          </div>
+        </div>
+
+        <div id="team2" class="team positionable resizable">
+          <div id="teamName2" class="name  "></div>
+          <!-- <ul class="teamList"></ul> -->
+          <div id="teamRotation2" class="playerContainer  ">
+              <div class="runnerLogo">
+                <img class="twitchLogo" src="../nodecg-speedcontrol/images/twitchlogo.png">
+              </div>
+              <div class="runnerInfo"> </div>
+          </div>
+        </div>
+
         <div id="timerContainer" class="positionable resizable">
             <div id="timer">
             </div>
             <div id="runInformationGameEstimate">
             </div>
         </div>
+
         <div id="runInformationContainer" class="positionable resizable">
             <div id="runInformationLogo">
             </div>
@@ -49,6 +77,10 @@
                 <div id="runInformationGameSystem">
                 </div>
             </div>
+        </div>
+        <div id="gameCapture1" class="positionable resizable gameCapture" aspect-ratio="4:3">
+        </div>
+        <div id="gameCapture2" class="positionable resizable gameCapture" aspect-ratio="4:3">
         </div>
     </div>
 </body>

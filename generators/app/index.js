@@ -103,7 +103,7 @@ module.exports = yeoman.Base.extend({
         name: 'scCompatRange',
         message: 'What semver range of Speedcontrol versions is this bundle compatible with?',
         type: 'input',
-        default: '~v0.7a'
+        default: '~0.8'
       }, {
 				name: 'intermission',
 				message: 'Would you like to make an intermission graphic for your bundle?',

@@ -1,25 +1,37 @@
 body {
-  font-family: "Arial";
   overflow:hidden;
   margin: 0px;
   padding: 0px;
+  font-family: 'FFFForward';
+  color: #8d7996;
 
 /* The font size you want at 720p.  Other sizes are calculated from here */
 
   font-size: 15px;
 }
 
+.positionable {
+      position: fixed;
+      width: 150px;
+      top: 100px;
+      left: 100px;
+}
+
+
+
+
 #window-container {
     position: fixed;
     top: 0px;
     left: 0px;
-    background-image: url('../../nodecg-speedcontrol/images/Background.png');
+    background-image: url('../nodecg-speedcontrol/images/Background.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: {{height}}px;
     width: {{width}}px;
     overflow: hidden;
-    color: white;
+    color: #8d7996;
+
     margin: 0px;
     padding: 0px;
 }
@@ -62,18 +74,43 @@ body {
   content: ':00';
 }
 
+.team {
+  position: fixed;
+  top: 0px;
+  width: 400px;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+}
+
+.team .name {
+  order: 1;
+  top: 0px;
+  align-content: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.team .name:before {
+  content: 'Team ';
+}
+
+
 .playerContainer {
-    position: fixed;
-    top: 0px;
+    position: absolute;
+    bottom: 0px;
     left: 0px;
-    width: 33%;
-    height: 7%;
+    top: 25%;
+    vertical-align: middle;
+    width: 100%;
+    height: 75%;
+    flex-grow: 3;
     display: flex;
     overflow: hidden;
 }
 
 .runnerLogo {
-    background-image: url('../../nodecg-speedcontrol/images/playerlogo.png');
+    background-image: url('../nodecg-speedcontrol/images/playerlogo.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 90%;
@@ -85,11 +122,12 @@ body {
 .runnerInfo {
     color: #8d7996;
     background: rgba(255,255,255,0.1);
-    line-height: 2em;
+    line-height: 3.5em;
     height: 100%;
     width: 100%;
     vertical-align: middle;
     padding-left: 15px;
+    padding-right: 15px;
     flex: 1;
 }
 
@@ -147,7 +185,7 @@ body {
 }
 
 #runInformationLogo {
-    background-image: url('../../nodecg-speedcontrol/images/runInformationIcon.png');
+    background-image: url('../nodecg-speedcontrol/images/runInformationIcon.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -182,9 +220,9 @@ body {
     top: 0px;
     width: 316px;
     height: 88px;
-    background-image: url('../../nodecg-speedcontrol/images/SpeedcontrolLogo.png');
+    background-image: url('../nodecg-speedcontrol/images/SpeedcontrolLogo.png');
     background-repeat: no-repeat;
-    background-size: 85%;
+    background-size: 100%;
 }
 
 .runnerTimerFinishedContainer {
@@ -212,7 +250,7 @@ body {
     width: 32px;
     height: 76%;
     padding: 5px;
-    background-image: url('../../nodecg-speedcontrol/images/finishFlag.gif');
+    background-image: url('../nodecg-speedcontrol/images/finishFlag.gif');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 76%;
@@ -240,4 +278,9 @@ body {
     z-index: 200;
     width: 100%;
     height: 30px;
+}
+
+
+#team1 .playerContainer .runnerInfo {
+  text-align: right;
 }
