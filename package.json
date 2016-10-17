@@ -22,7 +22,8 @@
   "dependencies": {
     "yeoman-generator": "^0.23.0",
     "chalk": "^1.0.0",
-    "yosay": "^1.0.0"
+    "yosay": "^1.0.0",
+    "parse-author": "^1.0.0"
   },
   "devDependencies": {
     "yeoman-test": "^1.0.0",
@@ -37,7 +38,6 @@
     "gulp-mocha": "^2.0.0",
     "gulp-plumber": "^1.0.0",
     "gulp-nsp": "^2.1.0",
-    "parse-author": "^1.0.0",
     "lodash": "^4.10.0",
     "generator-license": "^4.0.0",
     "generator-node": "^1.10.2",
