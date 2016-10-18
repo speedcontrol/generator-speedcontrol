@@ -1,4 +1,4 @@
-## ATTENTION: This generator has not been released yet.  Use is not supported.
+## ATTENTION: Only the Single-instance generator is supported right now, other modes still need to be finished.
 
 
 # generator-speedcontrol [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
