@@ -158,7 +158,7 @@ display: none;
 }
 
 #runInformationLogo {
-    background-image: url('../../nodecg-speedcontrol/images/runInformationIcon.png');
+    background-image: url('/bundles/nodecg-speedcontrol/graphics/images/runInformationIcon.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -217,7 +217,7 @@ display: none;
     width: 32px;
     height: 76%;
     padding: 5px;
-    background-image: url('../../nodecg-speedcontrol/images/finishFlag.gif');
+    background-image: url('/bundles/nodecg-speedcontrol/graphics/images/finishFlag.gif');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 76%;

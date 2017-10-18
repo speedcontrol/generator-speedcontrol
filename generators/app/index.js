@@ -98,12 +98,12 @@ module.exports = yeoman.Base.extend({
 				name: 'compatibleRange',
 				message: 'What semver range of NodeCG versions is this bundle compatible with?',
 				type: 'input',
-				default: '~0.8.0'
+				default: '~0.9.0'
 			}, {
         name: 'scCompatRange',
         message: 'What semver range of Speedcontrol versions is this bundle compatible with?',
         type: 'input',
-        default: '~0.8'
+        default: '~0.9'
       }, {
 				name: 'intermission',
 				message: 'Would you like to make an intermission graphic for your bundle?',
