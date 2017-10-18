@@ -1,6 +1,6 @@
 {
   "name": "generator-speedcontrol",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generate nodecg graphics bundles for use with speedcontrol.",
   "homepage": "https://github.com/speedcontrol/generator-speedcontrol#readme",
   "author": "btrim <btrim.twitch@gmail.com>",
