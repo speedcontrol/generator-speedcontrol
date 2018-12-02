@@ -1,5 +1,8 @@
-## ATTENTION: Only the Single-instance generator is supported right now, other modes still need to be finished.
+## This bundle is *very* out of date; if you need an example bundle, see [speedcontrol-simpletext](https://github.com/speedcontrol/speedcontrol-simpletext). It is being left here as reference!
 
+***
+
+### ATTENTION: Only the Single-instance generator is supported right now, other modes still need to be finished.
 
 # generator-speedcontrol [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > Generate nodecg graphics bundles for use with speedcontrol.
